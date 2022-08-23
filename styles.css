@@ -145,6 +145,7 @@ section::before {
     transition:bottom 0.5s, z-index 0s, transform 0.5s, padding 0.5s;
     transition-delay: 0.5s, 0.5s, 0s, 0.5s;
     color: #fff;
+    text-shadow:black;
 }
 
 .cardProg:hover .text {
@@ -195,5 +196,9 @@ svg circle:nth-child(2) {
 }
 
 .cardProg:nth-child(2) svg circle:nth-child(2) {
+    stroke-dashoffset: calc(440px - (440px * 0) / 100);
+}
+
+.cardProg:nth-child(3) svg circle:nth-child(2) {
     stroke-dashoffset: calc(440px - (440px * 50) / 100);
 }

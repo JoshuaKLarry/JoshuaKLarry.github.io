@@ -1,8 +1,17 @@
+/* 
+    Browser resets.
+*/
+
 * {
     margin:0px;
     padding:0px;
-    font-family: 'Koulen', cursive;
+    font-family: 'Kanit', sans-serif;
 }
+
+/* 
+    With the use of IDs, I can override some of 
+    Bootstrap's default values and change them to my own.
+*/
 
 #override h1, h4 {
     text-shadow: 1px 1px 5px white;
@@ -11,6 +20,11 @@
 
 #override h1 {
     font-weight:bolder;
+    font-size:60px;
+}
+
+#override h4 {
+    font-size:25px;
 }
 
 #override hr {
@@ -36,7 +50,7 @@
 }
 
 body {
-    background-image:url(BeachBackground.png);
+    background-image:url(AboutBackground.png);
     background-size:cover;
     background-attachment: scroll;
 }
@@ -45,6 +59,10 @@ img {
     border-radius:10px;
     box-shadow: 0 15px 35px rgba(0, 0, 0, 1);
 }
+
+/*
+    All of the following lines are for the progress section.
+*/
 
 section {
     position:relative;
@@ -162,7 +180,7 @@ section::before {
 }
 
 .cardProg:nth-child(2) .text {
-    background:rgb(251, 255, 0);
+    background:rgb(155, 158, 0);
 }
 
 .cardProg:nth-child(3) .text {
